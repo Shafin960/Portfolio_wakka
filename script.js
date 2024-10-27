@@ -45,3 +45,50 @@ function scrolllogo() {
 
 // Start the animation
 scrolllogo();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.books-slider');
+    
+    // Function to reset animation smoothly
+    function resetAnimation() {
+        if (-slider.getBoundingClientRect().left >= slider.scrollWidth / 2) {
+            slider.style.animation = 'none';
+            slider.offsetHeight; // Trigger reflow
+            slider.style.animation = 'slideLeft 20s linear infinite';
+        }
+    }
+
+    // Check position periodically
+    setInterval(resetAnimation, 50);
+
+    // Optional: Add touch support
+    let startX;
+    let scrollLeft;
+    let isDown = false;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.style.animationPlayState = 'paused';
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.style.animationPlayState = 'running';
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.style.animationPlayState = 'running';
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+});
