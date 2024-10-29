@@ -34,10 +34,11 @@
 }
 
 body {
-  background: linear-gradient( #414141 , #101010);
+  background: linear-gradient(180deg, #292929 , #101010 7%);
   min-height: 100vh;
   margin: 0;
-}
+} 
+
 .master-wrapper {
   padding-left: 15%;
   padding-right: 10%;
