@@ -34,9 +34,14 @@
 }
 
 body {
-  background: linear-gradient(180deg, #292929 , #101010 7%);
+  /*background: linear-gradient(180deg, #292929 , #101010 7%);*/
+  background-image: url('./Assets/BG.png'); /* Replace with your image path */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Scales the image to cover the entire area */
+  background-position: center; /* Centers the image in the element */
   min-height: 100vh;
   margin: 0;
+
 } 
 
 .master-wrapper {
