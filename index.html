@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Wakka</title>
   </head>
   <body>
@@ -177,7 +178,8 @@
 
         <div class="works-section-wrapper">
           <div class="works-section">
-            <div class="each-container-wrapper">
+            <div class="each-container-wrapper" data-aos="fade-up"
+            data-aos-duration="1500">
               <div class="each-container">
                 <div class="img-container">
                   <img
@@ -200,7 +202,8 @@
                 </div>
             </div>
             
-            <div class="each-container-wrapper">
+            <div class="each-container-wrapper" data-aos="fade-up"
+            data-aos-duration="1500">
               <div class="each-container">
                 <div class="img-container">
                   <img
@@ -222,7 +225,8 @@
                   <span class="text">Health Tech</span>
                 </div>
             </div>
-            <div class="each-container-wrapper">
+            <div class="each-container-wrapper" data-aos="fade-up"
+            data-aos-duration="1500">
               <div class="each-container">
                 <div class="img-container">
                   <img
@@ -255,7 +259,8 @@
 
         <div class="works-section-wrapper">
           <div class="works-section">
-            <div class="each-container">
+            <div class="each-container" data-aos="fade-up"
+            data-aos-duration="1500">
               <img
                 src="./Assets/img_Docmedilink.svg"
                 style="border-radius: 8px; display: block; margin-bottom: 10px"
@@ -267,7 +272,8 @@
                 <span class="text">Telehealth Platform</span>
               </div>
             </div>
-            <div class="each-container">
+            <div class="each-container" data-aos="fade-up"
+            data-aos-duration="1500">
               <img
                 src="./Assets/img_LondonHealth.svg"
                 style="border-radius: 8px; display: block; margin-bottom: 10px"
@@ -279,7 +285,8 @@
                 <span class="text">Telehealth</span>
               </div>
             </div>
-            <div class="each-container">
+            <div class="each-container" data-aos="fade-up"
+            data-aos-duration="1500">
               <img
                 src="./Assets/img_Dotonline.svg"
                 style="border-radius: 8px; display: block; margin-bottom: 10px"
@@ -300,7 +307,7 @@
       <div class="award-section"></div>
     </div>
 
-    <div class="master-wrapper">
+    <div class="master-wrapper-footer">
       <div class="footer-wrapper">
         <div class="footer">
           <div class="scrolling-footer">
@@ -322,7 +329,7 @@
             </div>
           </div>
         </div>
-        <div class="header" style="margin-bottom: 6rem">
+        <div class="header" style="margin-bottom: 200px">
           <div class="links">
             <div class="d-flex justify-content-evenly" style="gap: 100px">
               <a href="#" class="link-item"
@@ -341,5 +348,9 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
