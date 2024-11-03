@@ -46,3 +46,29 @@ function scrolllogo() {
 // Start the animation
 scrolllogo();
 
+document.querySelectorAll('.each-container').forEach(container => {
+    const viewProject = container.querySelector('.view-project img');
+  
+    container.addEventListener('mousemove', (e) => {
+      const rect = container.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+  
+      // Calculate offsets to center the image
+      const offsetX = viewProject.offsetWidth / 2;
+      const offsetY = viewProject.offsetHeight / 2;
+  
+      // Apply transform with offsets
+      viewProject.style.transform = `translate(${x - offsetX}px, ${y - offsetY}px)`;
+    });
+  
+    container.addEventListener('mouseenter', () => {
+      viewProject.style.display = 'block';
+    });
+  
+    container.addEventListener('mouseleave', () => {
+      viewProject.style.display = 'none';
+    });
+  });
+  
+  

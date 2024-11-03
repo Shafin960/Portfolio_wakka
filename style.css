@@ -450,9 +450,33 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.each-container {
+.each-container-wrapper{
   margin-bottom: 3rem;
+}
+.each-container {
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.img-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.view-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  pointer-events: none;
+}
+
+.each-container:hover .view-project {
+  display: block;
+}
+
+.view-project img {
+  height: 200px;
 }
 
 .award-wrapper {
