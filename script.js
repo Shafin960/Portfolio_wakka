@@ -8,15 +8,15 @@ let position = 0;
 const speed = 1; // Adjust speed as needed (pixels per frame)
 
 function scroll() {
-    position -= speed;
+  position -= speed;
 
-    // Reset position when first set is fully scrolled
-    if (-position >= content.offsetWidth / 2) {
-        position = 0;
-    }
+  // Reset position when first set is fully scrolled
+  if (-position >= content.offsetWidth / 2) {
+    position = 0;
+  }
 
-    content.style.transform = `translateX(${position}px)`;
-    requestAnimationFrame(scroll);
+  content.style.transform = `translateX(${position}px)`;
+  requestAnimationFrame(scroll);
 }
 
 // Start the animation
@@ -32,43 +32,43 @@ let positionlogo = 0;
 const speedlogo = 1; // Adjust speed as needed (pixels per frame)
 
 function scrolllogo() {
-    positionlogo -= speedlogo;
+  positionlogo -= speedlogo;
 
-    // Reset position when first set is fully scrolled
-    if (-positionlogo >= contentlogo.offsetWidth / 2) {
-        positionlogo = 0;
-    }
+  // Reset position when first set is fully scrolled
+  if (-positionlogo >= contentlogo.offsetWidth / 2) {
+    positionlogo = 0;
+  }
 
-    contentlogo.style.transform = `translateX(${positionlogo}px)`;
-    requestAnimationFrame(scrolllogo);
+  contentlogo.style.transform = `translateX(${positionlogo}px)`;
+  requestAnimationFrame(scrolllogo);
 }
 
 // Start the animation
 scrolllogo();
 
 document.querySelectorAll('.each-container').forEach(container => {
-    const viewProject = container.querySelector('.view-project img');
-  
-    container.addEventListener('mousemove', (e) => {
-      const rect = container.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-  
-      // Calculate offsets to center the image
-      const offsetX = viewProject.offsetWidth / 2;
-      const offsetY = viewProject.offsetHeight / 2;
-  
-      // Apply transform with offsets
-      viewProject.style.transform = `translate(${x - offsetX}px, ${y - offsetY}px)`;
-    });
-  
-    container.addEventListener('mouseenter', () => {
-      viewProject.style.display = 'block';
-    });
-  
-    container.addEventListener('mouseleave', () => {
-      viewProject.style.display = 'none';
-    });
+  const viewProject = container.querySelector('.view-project img');
+
+  container.addEventListener('mousemove', (e) => {
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    // Calculate offsets to center the image
+    const offsetX = viewProject.offsetWidth / 2;
+    const offsetY = viewProject.offsetHeight / 2;
+
+    // Apply transform with offsets
+    viewProject.style.transform = `translate(${x - offsetX}px, ${y - offsetY}px)`;
   });
-  
-  
+
+  container.addEventListener('mouseenter', () => {
+    viewProject.style.display = 'block';
+  });
+
+  container.addEventListener('mouseleave', () => {
+    viewProject.style.display = 'none';
+  });
+});
+
+
