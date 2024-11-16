@@ -653,6 +653,9 @@ body {
 }
 
 /* Full Viewport Section */
+.main-container {
+  height: 200vh; /* To allow scrolling */
+}
 .achievement-section {
   display: flex;
   align-items: start;
@@ -660,6 +663,7 @@ body {
   height: 100vh;
   background: linear-gradient(#C0BFBA, #D0D0D0);
   padding-left: 15%;
+  position: relative;
 }
 
 .content {
@@ -719,4 +723,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #525252;
+}
+.award-image {
+  position: absolute;
+  bottom: -100%; /* Initially hidden below the viewport */
+  right: 0;
 }

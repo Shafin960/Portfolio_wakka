@@ -71,4 +71,21 @@ document.querySelectorAll('.each-container').forEach(container => {
   });
 });
 
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+// GSAP animation for scrolling effect
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".achievement-section",
+    start: "top top", // Start when the section hits the top
+    end: "+=100%", // End after scrolling 100% of the section
+    scrub: true, // Smooth scrubbing
+    pin: true, // Lock the section
+  },
+})
+  .to(".award-image", {
+    y: "-100%", // Move the image up into view
+    duration: 1,
+  });
 
