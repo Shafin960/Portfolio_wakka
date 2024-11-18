@@ -465,10 +465,9 @@ body {
   width: 100%;
 }
 .works-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 .each-container-wrapper {
   margin-bottom: 3rem;
@@ -728,4 +727,10 @@ body {
   position: absolute;
   bottom: -100%; /* Initially hidden below the viewport */
   right: 0;
+}
+
+
+.works-section-grid{
+  display: grid;
+  column-gap: 15px;
 }
