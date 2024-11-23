@@ -88,4 +88,3 @@ gsap.timeline({
     y: "-100%", // Move the image up into view
     duration: 1,
   });
-
