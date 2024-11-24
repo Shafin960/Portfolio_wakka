@@ -43,6 +43,9 @@
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: linear-gradient(180deg, #292929, #101010 7%);
   min-height: 100vh;
@@ -681,7 +684,7 @@ body {
 
 .content {
   max-width: 450px;
-  padding-top: 145px;
+  padding-top: 120px;
 }
 
 /* Achievement Icon and Label */
@@ -722,7 +725,7 @@ body {
   background-color: #ff8762;
   color: #101010;
   font-style: italic;
-  padding: 12px 10px 12px 10px;
+  padding: 10px 8px 10px 8px;
   font-size: 12px;
   font-weight: 400;
   border-radius: 100px;
@@ -732,9 +735,9 @@ body {
 /* Description */
 .description {
   margin-top: 48px;
-  font-family: 'Spacelight';
-  font-size: 16px;
-  font-weight: 400;
+  font-family: 'Spacemreg';
+  font-size: 18px;
+  font-weight: 500;
   color: #525252;
 }
 .award-image {
