@@ -941,4 +941,16 @@ body {
   .navbar{
     width: 345px;
   }
+  .master-wrapper{
+    padding-left: 20px;
+  }
+  .works-section-title{
+    margin-top: 50px;
+  }
+  .works-section-title h1{
+    size: 32px;
+  }
+  .works-section-title p img{
+    size: 20px;
+  }
 }
