@@ -359,7 +359,7 @@ body {
 .navbar {
   position: sticky;
   bottom: 5%;
-  width: 450px;
+  width: 520px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -460,7 +460,7 @@ body {
   font-family: "WhiteInk";
   font-size: 18px;
   color: #ebebeb;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .header-container {
   display: flex;
@@ -769,6 +769,13 @@ body {
   border-radius: 8px;
 }
 
+.no-design{
+  text-decoration: none;
+}
+
+.no-design:hover{
+  text-decoration: none;
+}
 /* Creates the infinite sliding effect */
 @keyframes slide {
   0% {
@@ -827,4 +834,63 @@ body {
   grid-template-columns: 420px auto;
   column-gap: 230px;
   justify-content: space-between;
+}
+
+.blog-text{
+  font-family: "WhiteInkreg";
+  font-weight: 400;
+  font-size: 48px;
+  color: #EBEBEB;
+}
+.blog-heading{
+  margin-bottom: 80px;
+}
+.blog-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 125px;
+}
+.blog-img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.blog-details{
+  font-family: "WhiteInkreg";
+  font-weight: 400;
+  font-size: 18px;
+  color: #EBEBEB;
+}
+
+.blog-read{
+  font-family: "Spacelight";
+  font-size: 18px;
+  color: #8B8B8B;
+}
+
+.master-wrapper-about{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  margin: 0;
+}
+.vertical-lines-about{
+  position: fixed;
+  top: 0;
+  left: 12%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.line-about{
+  width: 1px;
+  background-color: #424242;
+  height: 100vh;
 }
