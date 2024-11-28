@@ -923,6 +923,7 @@ body {
   }
   .intro-section  h1{
     font-size: 50px;
+    padding-top: 10px;
   }
   .intro-section p{
     font-size: 15px;
@@ -950,7 +951,28 @@ body {
   .works-section-title h1{
     size: 32px;
   }
-  .works-section-title p img{
-    size: 20px;
+  .works-section-title p{
+    font-size: 20px;
+  }
+  .works-section-title img{
+    height: 18px;
+  }
+  .vertical-lines-maincont{
+    display: none;
+  }
+  .linemain{
+    display: none;
+  }
+  .achievement-section{
+    padding-left: 20px !important;
+  }
+  .content{
+    padding-top: 70px;
+  }
+  .title{
+    font-size: 34px;
+  }
+  .description{
+    font-size: 15px;
   }
 }
