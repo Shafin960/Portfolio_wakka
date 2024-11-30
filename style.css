@@ -475,8 +475,8 @@ body {
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   background-color: #8b8b8b;
   border-radius: 50%;
   margin: 0 0.5rem;
@@ -893,6 +893,31 @@ body {
 .mobile-button{
   display: none;
 }
+.about-titties{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE MOBILE */
 
 @media (max-width: 576px) {
@@ -944,6 +969,7 @@ body {
   }
   .master-wrapper{
     padding-left: 20px;
+    padding-right: 20px;
   }
   .works-section-title{
     margin-top: 50px;
@@ -974,5 +1000,126 @@ body {
   }
   .description{
     font-size: 15px;
+  }
+  .works-section{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scrollbar-width: none;
+  }
+  .each-container {
+    width: 260px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+  .text{
+    letter-spacing: 0rem;
+  }
+  .nunu{
+    width: 260px;
+  }
+  .puupy{
+    margin-bottom: 80px;
+  }
+  .blog-grid{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scrollbar-width: none;
+  }
+  .each-blog{
+    width: 260px;
+    flex-shrink: 0;
+  }
+  .blog-details{
+    font-size: 16px;
+  }
+  .blog-heading{
+    margin-bottom: 40px;
+  }
+  .blog-heading{
+    margin-top: 30px;
+  }
+  .master-wrapper-footer{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .foot-st{
+    gap: 40px !important;
+  }
+  .vertical-lines-about{
+    display: none;
+  }
+  .line-about{
+    display: none;
+  }
+  .about-titties{
+    display: block;
+    font-family: 'WhiteInkreg';
+    font-size: 32px;
+    color: #EBEBEB;
+  }
+  .about-grid-boy{
+    display: block;
+  }
+  .about-intro-wrapper{
+    margin-top: 30px;
+  }
+  .dpimg{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .about-myself{
+    width: 100%;
+    height: auto;
+  }
+  .mid-about{
+    width: 100% !important;
+    font-size: 15px;
+  }
+  .heading-about{
+    font-size: 28px;
+    font-family: "WhiteInkreg";
+    font-weight: 400;
+  }
+  .bold-about{
+    width: 100%;
+    font-size: 15px;
+  }
+  .about-second-section{
+    margin-top: 80px;
+  }
+  .mid-section-grid{
+    display: block;
+  }
+  .mid-about-first{
+    width: 100%;
+    font-size: 28px;
+    font-family: "WhiteInkreg";
+  }
+  .mid-about-sec{
+    font-size: 15px;
+  }
+  .others-grid{
+    display: block;
+  }
+  .others-wrapper{
+    margin-top: 80px;
+  }
+  .not-design{
+    font-size: 28px;
+    width: 100% !important;
+  }
+  .red-quote{
+    margin-top: 80px;
+  }
+  .not-choto{
+    font-size: 28px;
+  }
+  .tour{
+    width: 100%;
+    height: auto !important;
   }
 }
