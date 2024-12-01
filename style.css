@@ -989,7 +989,7 @@ body {
 }
 .typed-cursor {
   color: #FC5F2F; 
-  width: 6px; 
+  width: 6px !important; 
   margin-left: 2px; 
 }
 .slide-up {
@@ -1228,5 +1228,15 @@ body {
   .dot {
     margin: 0;
     margin-bottom: 2px;
+  }
+  .books-slider .image {
+    width: 170px; /* Adjust width to fit mobile screens */
+    height: 170px;
+  }
+  .books-slider .image img {
+    height: 170px;
+  }
+  .books-slider .image{
+    left: calc(170px * 5);
   }
 }

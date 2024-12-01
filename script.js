@@ -31,7 +31,8 @@
       backDelay: 1000,           
       startDelay: 500,           
       showCursor: true,         
-      loop: true                
+      loop: true,
+      cursorWidth: 6                 
     });
 
     // After typing finishes, slide up the splash screen

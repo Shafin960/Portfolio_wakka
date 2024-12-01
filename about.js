@@ -27,7 +27,18 @@ gsap.timeline({
         duration: 1,
     });
 
-
+    function changeImageSrc() {
+        var img = document.getElementById('awardImage');
+        if (window.innerWidth <= 767) {  // Mobile view
+          img.src = './Assets/mobileaward.svg';
+        } 
+      }
+      
+      // Call the function initially to set the correct image
+      changeImageSrc();
+      
+      // Add an event listener to adjust the image on window resize
+      window.addEventListener('resize', changeImageSrc);
 const container = document.querySelector('.scrolling-location-container');
 const content = document.querySelector('.scrolling-location');
 
@@ -51,6 +62,9 @@ function scroll() {
 
 // Start the animation
 scroll();
+
+
+  
 
 const containerlogo = document.querySelector('.bottom-home');
 const contentlogo = document.querySelector('.clients-container');
