@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="./Assets/favivon.svg" type="image/x-icon" />
     <title>Wakka</title>
   </head>
@@ -20,26 +21,18 @@
         <div class="navbar">
           <div class="navlink-wrapper">
             <div class="nav-links">
-              <button class="nav-button ">
-                <a style="text-decoration: none; color: #fff" href="index.html"
-                  >Home</a
-                >
-              </button>
-              <button class="nav-button active">
-                <a style="text-decoration: none; color: #fff" href="Work.html"
-                  >Work</a
-                >
-              </button>
-              <button class="nav-button">
-                <a style="text-decoration: none; color: #fff" href="About.html"
-                  >About</a
-                >
-              </button>
-              <button class="nav-button">
-                <a style="text-decoration: none; color: #fff" href="Blog.html"
-                  >Blog</a
-                >
-              </button>
+              <a style="text-decoration: none; color: #fff" href="index.html">
+                <button class="nav-button">Home</button></a
+              >
+              <a style="text-decoration: none; color: #fff" href="Work.html">
+                <button class="nav-button active">Work</button></a
+              >
+              <a style="text-decoration: none; color: #fff" href="About.html">
+                <button class="nav-button">About</button></a
+              >
+              <a style="text-decoration: none; color: #fff" href="Blog.html">
+                <button class="nav-button">Blog</button></a
+              >
             </div>
           </div>
 
@@ -54,6 +47,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="vertical-lines">
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
     <div class="master-wrapper">
       <div class="work-wrapper" id="scrooled">
@@ -372,7 +369,8 @@
                 >EMAIL <img src="./Assets/Link.png" alt="arrow icon"
               /></a>
               <a
-              href="https://wa.me/8801782582636" target="_blank"
+                href="https://wa.me/8801782582636"
+                target="_blank"
                 class="link-item"
                 >WHATSAPP <img src="./Assets/Link.png" alt="arrow icon"
               /></a>
@@ -383,5 +381,9 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

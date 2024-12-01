@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="icon" href="./Assets/favivon.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Wakka</title>
   </head>
   <body>
@@ -24,26 +25,18 @@
         <div class="navbar">
           <div class="navlink-wrapper">
             <div class="nav-links">
-              <button class="nav-button ">
-                <a style="text-decoration: none; color: #fff" href="index.html"
-                  >Home</a
-                >
-              </button>
-              <button class="nav-button">
-                <a style="text-decoration: none; color: #fff" href="Work.html"
-                  >Work</a
-                >
-              </button>
-              <button class="nav-button active">
-                <a style="text-decoration: none; color: #fff" href="About.html"
-                  >About</a
-                >
-              </button>
-              <button class="nav-button">
-                <a style="text-decoration: none; color: #fff" href="Blog.html"
-                  >Blog</a
-                >
-              </button>
+              <a style="text-decoration: none; color: #fff" href="index.html">
+                <button class="nav-button">Home</button></a
+              >
+              <a style="text-decoration: none; color: #fff" href="Work.html">
+                <button class="nav-button ">Work</button></a
+              >
+              <a style="text-decoration: none; color: #fff" href="About.html">
+                <button class="nav-button active">About</button></a
+              >
+              <a style="text-decoration: none; color: #fff" href="Blog.html">
+                <button class="nav-button">Blog</button></a
+              >
             </div>
           </div>
 
@@ -63,10 +56,12 @@
       <div class="about-intro-wrapper">
         <div class="about-grid-boy">
           <p class="about-titties">About</p>
-          <div class="dp">
+          <div class="dp" data-aos="fade-up"
+          data-aos-duration="1500">
             <img src="./Assets/dp.svg" class="dpimg"/>
           </div>
-          <div class="about-myself">
+          <div class="about-myself" data-aos="fade-up"
+          data-aos-duration="1500">
             <p class="heading-about">Hi, I'm Wakif</p>
             <div class="mid-about">
               <p>
@@ -105,7 +100,8 @@
       </div>
 
       <div class="about-second-section">
-        <div class="mid-section-grid">
+        <div class="mid-section-grid" data-aos="fade-up"
+        data-aos-duration="1500">
           <div class="mid-about-first">
             <p>
               Some books that have left a lasting imprint on me as a designer
@@ -157,8 +153,9 @@
 
       <div class="others-wrapper">
         <div class="others">
-          <div class="others-grid">
-            <div class="">
+          <div class="others-grid" >
+            <div class="" data-aos="fade-up"
+            data-aos-duration="1500">
               <p class="not-design">And when I’m not designing,</p>
               <p class="mid-about" style="width: 417px;">
                 you’ll find me on the football field. Football has been a huge
@@ -167,7 +164,8 @@
               </p>
               <img src="./Assets/Mask group.svg" style="width: 100%; height: auto;"/>
             </div>
-            <div class="">
+            <div class="" data-aos="fade-up"
+            data-aos-duration="1500">
               <p class="red-quote">A favourite quote</p>
               <p class="not-design not-choto" style="width: 525px;">
                 Three things in life: your health, your mission, and the people
@@ -179,8 +177,47 @@
           </div>
         </div>
       </div>
-      
     </div>
+
+
+    <div class="main-container">
+      <div class="vertical-lines-maincont-about">
+        <div class="linemainabout"></div>
+        <div class="linemainabout"></div>
+      </div>
+      <div class="achievement-section">
+        <div class="content">
+          <div class="achievement-label">
+            <div>
+              <img class="achievement-img" src="./Assets/Union2.svg" />
+            </div>
+            <div style="margin-left: 10px">Achievement</div>
+          </div>
+          <div class="title">
+            Runner Up<br />
+            at <span>ITVerse 2023</span>
+          </div>
+          <div class="badgeawar">UX Design Category</div>
+          <div class="description">
+            <p>
+              I participated in the UX design competition as a solo participant.
+              While other teams participated with a 3-member team, fortunate
+              enough, I still managed to become the 2nd runner-up.
+            </p>
+            <p>
+              This competition gave me a unique experience of brainstorming and
+              coming up with design solutions in a short span of time.
+            </p>
+          </div>
+        </div>
+        <div class="award-image">
+          <img src="./Assets/award.png" style="height: 100vh; width: auto" />
+        </div>
+      </div>
+    </div>
+
+
+
     <div class="master-wrapper-footer">
       <div class="footer-wrapper">
         <div class="footer">
@@ -240,6 +277,12 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
