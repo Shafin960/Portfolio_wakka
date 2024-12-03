@@ -1,13 +1,13 @@
-(function() {
+(function () {
     // Check if it's the first visit in the sessionStorage
     const hasVisited = sessionStorage.getItem('firstVisit') === 'true';
-  
+
     // If the user has visited before, hide splash screen immediately and show body content
     if (hasVisited) {
-      document.body.style.visibility = 'visible';
-      return;
+        document.body.style.visibility = 'visible';
+        return;
     }
-  })();
+})();
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -26,19 +26,46 @@ gsap.timeline({
         y: "-100%", // Move the image up into view
         duration: 1,
     });
+    document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide", {
+          type: "loop",
+          drag: false,
+          drag: "free",
+          focus: "center",
+          perPage: 3,
+          autoScroll: {
+            speed: 1,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+          },
+          arrows: false,
+          pagination: false,
+          gap: "20px",
+          breakpoints: {
+            768: { 
+              perPage: 1.5,
+              gap: "15px",
+            },
+          },
+        }).mount(window.splide.Extensions);
+      });
+      
 
-    function changeImageSrc() {
-        var img = document.getElementById('awardImage');
-        if (window.innerWidth <= 767) {  // Mobile view
-          img.src = './Assets/mobileaward.svg';
-        } 
-      }
-      
-      // Call the function initially to set the correct image
-      changeImageSrc();
-      
-      // Add an event listener to adjust the image on window resize
-      window.addEventListener('resize', changeImageSrc);
+
+function changeImageSrc() {
+    var img = document.getElementById('awardImage');
+    if (window.innerWidth <= 767) {  // Mobile view
+        img.src = './Assets/mobileaward.svg';
+    }
+}
+
+// Call the function initially to set the correct image
+changeImageSrc();
+
+
+
+// Add an event listener to adjust the image on window resize
+window.addEventListener('resize', changeImageSrc);
 const container = document.querySelector('.scrolling-location-container');
 const content = document.querySelector('.scrolling-location');
 
@@ -64,7 +91,7 @@ function scroll() {
 scroll();
 
 
-  
+
 
 const containerlogo = document.querySelector('.bottom-home');
 const contentlogo = document.querySelector('.clients-container');

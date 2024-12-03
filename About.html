@@ -12,6 +12,10 @@
     />
     <link rel="icon" href="./Assets/favivon.svg" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
     <title>Wakka</title>
   </head>
   <body>
@@ -117,22 +121,26 @@
         </div>
       </div>
 
-      <div class="books-wrapper">
-        <div class="books-slider">
-          <div class="image book1">
-            <img src="./Assets/book1.svg" alt="Book 1" />
-          </div>
-          <div class="image book2">
-            <img src="./Assets/book2.svg" alt="Book 1" />
-          </div>
-          <div class="image book3">
-            <img src="./Assets/book3.svg" alt="Book 1" />
-          </div>
-          <div class="image book4">
-            <img src="./Assets/book4.svg" alt="Book 1" />
-          </div>
-          <div class="image book5">
-            <img src="./Assets/book5.svg" alt="Book 1" />
+      <div data-aos="fade-up" data-aos-duration="1500">
+        <div class="splide books-wrapper">
+          <div class="splide__track">
+            <ul class="splide__list books-slider">
+              <li class="splide__slide image book1">
+                <img src="./Assets/book1.svg" alt="Book 1" />
+              </li>
+              <li class="splide__slide image book2">
+                <img src="./Assets/book2.svg" alt="Book 2" />
+              </li>
+              <li class="splide__slide image book3">
+                <img src="./Assets/book3.svg" alt="Book 3" />
+              </li>
+              <li class="splide__slide image book4">
+                <img src="./Assets/book4.svg" alt="Book 4" />
+              </li>
+              <li class="splide__slide image book5">
+                <img src="./Assets/book5.svg" alt="Book 5" />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -149,7 +157,7 @@
               </p>
               <img
                 src="./Assets/Mask group.svg"
-                style="width: 100%; height: auto; margin-top: 40px;"
+                style="width: 100%; height: auto; margin-top: 40px"
               />
             </div>
             <div class="" data-aos="fade-up" data-aos-duration="1500">
@@ -159,7 +167,12 @@
                 you love. That’s it.
               </p>
               <p class="blur">-Naval Ravikant</p>
-              <img src="./Assets/Tour.svg" style="margin-top: 36px;" class="tour" height="517px" />
+              <img
+                src="./Assets/Tour.svg"
+                style="margin-top: 36px"
+                class="tour"
+                height="517px"
+              />
             </div>
           </div>
         </div>
@@ -205,7 +218,11 @@
           </div>
         </div>
         <div class="award-image">
-          <img id="awardImage" src="./Assets/award.png" style="height: 100vh; width: auto" /> 
+          <img
+            id="awardImage"
+            src="./Assets/award.png"
+            style="height: 100vh; width: auto"
+          />
         </div>
       </div>
     </div>
@@ -271,6 +288,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="about.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

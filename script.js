@@ -1,6 +1,6 @@
 // script.js
 
-(function() {
+(function () {
   // Check if it's the first visit in the sessionStorage
   const hasVisited = sessionStorage.getItem('firstVisit') === 'true';
 
@@ -26,13 +26,13 @@
     // Create a new Typed instance for the splash screen text
     const typed = new Typed('#typed-output', {
       strings: ['Hello There'],
-      typeSpeed: 150,            
-      backSpeed: 150,            
-      backDelay: 1000,           
-      startDelay: 500,           
-      showCursor: true,         
+      typeSpeed: 150,
+      backSpeed: 150,
+      backDelay: 1000,
+      startDelay: 500,
+      showCursor: true,
       loop: true,
-      cursorWidth: 6                 
+      cursorWidth: 6
     });
 
     // After typing finishes, slide up the splash screen
@@ -68,6 +68,29 @@ gsap.timeline({
   });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide", {
+    type: "loop", // Enable infinite scrolling
+    perPage: 10,   // Show 5 logos at a time
+    gap: "130px", // Maintain the spacing
+    drag: false,  // Disable dragging if not needed
+    pagination: false, // Remove pagination dots
+    arrows: false,     // Remove navigation arrows
+    autoScroll: {
+      speed: 1, // Adjust the speed of scrolling
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    },
+    breakpoints: {
+      768: { // Adjust for smaller screens
+        perPage: 5,
+        gap: "50px",
+      },
+    },
+  }).mount(window.splide.Extensions);
+});
+
+
 const container = document.querySelector('.scrolling-location-container');
 const content = document.querySelector('.scrolling-location');
 
@@ -93,53 +116,39 @@ function scroll() {
 scroll();
 
 const containerlogo = document.querySelector('.bottom-home');
-const contentlogo = document.querySelector('.clients-container');
 
 // Clone the content for seamless scrolling
 content.innerHTML += content.innerHTML;
 
-let positionlogo = 0;
-const speedlogo = 1; // Adjust speed as needed (pixels per frame)
 
-function scrolllogo() {
-  positionlogo -= speedlogo;
 
-  // Reset position when first set is fully scrolled
-  if (-positionlogo >= contentlogo.offsetWidth / 2) {
-    positionlogo = 0;
-  }
 
-  contentlogo.style.transform = `translateX(${positionlogo}px)`;
-  requestAnimationFrame(scrolllogo);
-}
 
-// Start the animation
-scrolllogo();
 
 document.querySelectorAll('.each-container').forEach(container => {
   const imgContainer = container.querySelector('.img-container');
   const viewProject = container.querySelector('.view-project');
-  
+
   // Add a console log to help debug
   if (!imgContainer || !viewProject) {
     console.error('Missing .img-container or .view-project:', container);
     return; // Skip this iteration if elements are missing
   }
 
-  imgContainer.addEventListener('mousemove', function(e) {
+  imgContainer.addEventListener('mousemove', function (e) {
     const rect = imgContainer.getBoundingClientRect();
-    
+
     // Calculate relative mouse position within the container
     const x = e.clientX - rect.left + 20; // Offset 20px to the right
     const y = e.clientY - rect.top + 20; // Offset 20px down
-    
+
     // Position the button
     viewProject.style.left = `${x}px`;
     viewProject.style.top = `${y}px`;
     viewProject.style.display = 'block';
   });
 
-  imgContainer.addEventListener('mouseleave', function() {
+  imgContainer.addEventListener('mouseleave', function () {
     viewProject.style.display = 'none';
   });
 });
