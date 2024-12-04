@@ -230,34 +230,18 @@
     <div class="master-wrapper-footer">
       <div class="footer-wrapper">
         <div class="footer">
-          <div class="scrolling-footer">
-            <div class="scroll-content">
-              <!-- Original content -->
-              <div class="content-item">
-                <img
-                  src="./Assets/Union.svg"
-                  alt="Union icon"
-                  style="margin-bottom: 15px"
-                />
-                <span class="content-foot">THANKS FOR VISITING</span>
-              </div>
-              <!-- Duplicate content for seamless loop -->
-              <div class="content-item">
-                <img
-                  src="./Assets/Union.svg"
-                  alt="Union icon"
-                  style="margin-bottom: 15px"
-                />
-                <span class="content-foot">THANKS FOR VISITING</span>
-              </div>
-              <div class="content-item">
-                <img
-                  src="./Assets/Union.svg"
-                  alt="Union icon"
-                  style="margin-bottom: 15px"
-                />
-                <span class="content-foot">THANKS FOR VISITING</span>
-              </div>
+          <div class="splide scrolling-footer">
+            <div class="splide__track">
+              <ul class="splide__list scroll-content">
+                <li class="splide__slide content-item">
+                  <img
+                    src="./Assets/Union.svg"
+                    alt="Union icon"
+                    style="margin-bottom: 15px"
+                  />
+                  <span class="content-foot">THANKS FOR VISITING</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -288,6 +272,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="about.js"></script>

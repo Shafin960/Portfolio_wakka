@@ -585,15 +585,11 @@ body {
 }
 
 .scroll-content {
-  display: flex;
   white-space: nowrap;
-  animation: scroll 10s linear infinite;
 }
 
 .content-item {
-  display: flex;
   align-items: center;
-  padding: 0 20px;
 }
 
 .content-foot {
@@ -604,17 +600,9 @@ body {
 
 .content-item img {
   height: 36px;
-  margin-right: 15px;
+  margin-right: 90px;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 .scrolling-footer::-webkit-scrollbar {
   display: none;

@@ -26,30 +26,30 @@ gsap.timeline({
         y: "-100%", // Move the image up into view
         duration: 1,
     });
-    document.addEventListener("DOMContentLoaded", function () {
-        new Splide(".splide", {
-          type: "loop",
-          drag: false,
-          drag: "free",
-          focus: "center",
-          perPage: 3,
-          autoScroll: {
+document.addEventListener("DOMContentLoaded", function () {
+    new Splide(".splide", {
+        type: "loop",
+        drag: false,
+        drag: "free",
+        focus: "center",
+        perPage: 3,
+        autoScroll: {
             speed: 1,
             pauseOnHover: false,
             pauseOnFocus: false,
-          },
-          arrows: false,
-          pagination: false,
-          gap: "20px",
-          breakpoints: {
-            768: { 
-              perPage: 1.5,
-              gap: "15px",
+        },
+        arrows: false,
+        pagination: false,
+        gap: "20px",
+        breakpoints: {
+            768: {
+                perPage: 1.5,
+                gap: "15px",
             },
-          },
-        }).mount(window.splide.Extensions);
-      });
-      
+        },
+    }).mount(window.splide.Extensions);
+});
+
 
 
 function changeImageSrc() {
@@ -62,6 +62,28 @@ function changeImageSrc() {
 // Call the function initially to set the correct image
 changeImageSrc();
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    new Splide(".scrolling-footer", {
+        type: "loop", // Enable infinite scrolling
+        perPage: 1,   // Show 5 logos at a time
+        gap: "0px", // Maintain the spacing
+        drag: false,  // Disable dragging if not needed
+        pagination: false, // Remove pagination dots
+        arrows: false,     // Remove navigation arrows
+        autoScroll: {
+            speed: 1, // Adjust the speed of scrolling
+            pauseOnHover: false,
+            pauseOnFocus: false,
+        },
+        breakpoints: {
+            768: { // Adjust for smaller screens
+                perPage: 0.5,
+                gap: "0px",
+            },
+        },
+    }).mount(window.splide.Extensions);
+});
 
 
 // Add an event listener to adjust the image on window resize

@@ -12,6 +12,10 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="./Assets/favivon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
     <title>Wakka</title>
   </head>
   <body>
@@ -151,7 +155,7 @@
               data-aos-duration="1500"
             >
               <div class="nunu">
-                <div class="each-case-img">
+                <div class="img-container each-case-img">
                   <a
                     href="https://wakifalam.notion.site/Docmedilink-586433fa5df440cfabf9ce4df487c694"
                     target="_blank"
@@ -163,6 +167,9 @@
                       width="100%"
                     />
                   </a>
+                  <div class="view-project">
+                    <button class="see-design">See Project</button>
+                  </div>
                 </div>
 
                 <a
@@ -185,7 +192,7 @@
               data-aos-duration="1500"
             >
               <div class="nunu">
-                <div class="each-case-img">
+                <div class="each-case-img img-container">
                   <a
                     href="https://wakifalam.notion.site/Thrivewellrx-5a23d86b594d430f8437ea82f9e2400d"
                     target="_blank"
@@ -197,6 +204,9 @@
                       width="100%"
                     />
                   </a>
+                  <div class="view-project">
+                    <button class="see-design">See Project</button>
+                  </div>
                 </div>
 
                 <a
@@ -204,7 +214,9 @@
                   target="_blank"
                   class="no-design"
                 >
-                  <p class="title-p" style="margin-top: 30px">THRIVEWELL RX</p>
+                  <p class="title-p" style="margin-top: 30px">
+                    THRIVEWELL RX
+                  </p>
                 </a>
                 <div class="header-container">
                   <span class="text">SaaS</span>
@@ -220,7 +232,7 @@
               data-aos-duration="1500"
             >
               <div class="nunu">
-                <div class="each-case-img">
+                <div class="each-case-img img-container">
                   <a
                     href="https://www.behance.net/gallery/176135549/London-Health-UX-Case-Study"
                     target="_blank"
@@ -232,6 +244,9 @@
                       width="100%"
                     />
                   </a>
+                  <div class="view-project">
+                    <button class="see-design">See Project</button>
+                  </div>
                 </div>
 
                 <a
@@ -255,7 +270,7 @@
               data-aos-duration="1500"
             >
               <div class="nunu">
-                <div class="each-case-img">
+                <div class="each-case-img img-container">
                   <a
                     href="https://www.behance.net/gallery/176137363/DotOnline-UX-Case-Study"
                     target="_blank"
@@ -267,13 +282,18 @@
                       width="100%"
                     />
                   </a>
+                  <div class="view-project">
+                    <button class="see-design">See Project</button>
+                  </div>
                 </div>
 
                 <a
                   href="https://www.behance.net/gallery/176137363/DotOnline-UX-Case-Study"
                   target="_blank"
                   class="no-design"
-                  ><p class="title-p" style="margin-top: 30px">DOTONLINE</p></a
+                  ><p class="title-p" style="margin-top: 30px">
+                    DOTONLINE
+                  </p></a
                 >
                 <div class="header-container">
                   <span class="text">SaaS</span>
@@ -288,7 +308,7 @@
               data-aos-duration="1500"
             >
               <div class="nunu">
-                <div class="each-case-img">
+                <div class="each-case-img img-container">
                   <a
                     href="https://www.behance.net/gallery/176136631/Flexi-Note-UX-Case-study"
                     target="_blank"
@@ -300,13 +320,18 @@
                       width="100%"
                     />
                   </a>
+                  <div class="view-project">
+                    <button class="see-design">See Project</button>
+                  </div>
                 </div>
 
                 <a
                   href="https://www.behance.net/gallery/176136631/Flexi-Note-UX-Case-study"
                   target="_blank"
                   class="no-design"
-                  ><p class="title-p" style="margin-top: 30px">FLEXI NOTE</p></a
+                  ><p class="title-p" style="margin-top: 30px">
+                    FLEXI NOTE
+                  </p></a
                 >
                 <div class="header-container">
                   <span class="text">SaaS</span>
@@ -323,34 +348,18 @@
     <div class="master-wrapper-footer">
       <div class="footer-wrapper">
         <div class="footer">
-          <div class="scrolling-footer">
-            <div class="scroll-content">
-              <!-- Original content -->
-              <div class="content-item">
-                <img
-                  src="./Assets/Union.svg"
-                  alt="Union icon"
-                  style="margin-bottom: 15px"
-                />
-                <span class="content-foot">THANKS FOR VISITING</span>
-              </div>
-              <!-- Duplicate content for seamless loop -->
-              <div class="content-item">
-                <img
-                  src="./Assets/Union.svg"
-                  alt="Union icon"
-                  style="margin-bottom: 15px"
-                />
-                <span class="content-foot">THANKS FOR VISITING</span>
-              </div>
-              <div class="content-item">
-                <img
-                  src="./Assets/Union.svg"
-                  alt="Union icon"
-                  style="margin-bottom: 15px"
-                />
-                <span class="content-foot">THANKS FOR VISITING</span>
-              </div>
+          <div class="splide scrolling-footer">
+            <div class="splide__track">
+              <ul class="splide__list scroll-content">
+                <li class="splide__slide content-item">
+                  <img
+                    src="./Assets/Union.svg"
+                    alt="Union icon"
+                    style="margin-bottom: 15px"
+                  />
+                  <span class="content-foot">THANKS FOR VISITING</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -382,6 +391,8 @@
 
     <script src="work.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script>
       AOS.init();
     </script>
