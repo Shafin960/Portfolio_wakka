@@ -61,6 +61,12 @@ body {
   opacity: 1;
   transition: opacity 0.5s ease-in-out; /* Smooth transition for visibility */
 }
+#magicMouseCursor{
+  border: 1px solid #fc5f2f !important;
+}
+#magicPointer{
+  background: #fc5f2f !important;
+}
 
 .vertical-lines {
   position: fixed;
