@@ -40,7 +40,7 @@ document.querySelectorAll('.each-container').forEach(container => {
 document.addEventListener("DOMContentLoaded", function () {
   new Splide(".scrolling-footer", {
     type: "loop", // Enable infinite scrolling
-    perPage: 1,   // Show 5 logos at a time
+    perPage: 4,   // Show 5 logos at a time
     gap: "0px", // Maintain the spacing
     drag: false,  // Disable dragging if not needed
     pagination: false, // Remove pagination dots
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       768: { // Adjust for smaller screens
-        perPage: 0.5,
+        perPage: 2,
         gap: "0px",
       },
     },
