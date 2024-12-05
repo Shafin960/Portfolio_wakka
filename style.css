@@ -525,6 +525,7 @@ body {
 .each-case-img {
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 .each-case-img img {
   transition: transform 0.5s ease;
@@ -605,8 +606,7 @@ body {
 }
 
 .content-item img {
-  height: 36px;
-  margin-right: 90px;
+  height: 38px;
 }
 
 
@@ -918,7 +918,9 @@ body {
 .about-titties {
   display: none;
 }
-
+.tinlinebaaaler{
+  width: 300px;
+}
 .vertical-lines-maincont-about {
   position: absolute;
   top: 0;
@@ -1205,5 +1207,12 @@ body {
   }
   .blog-text{
     font-size: 32px;
+  }
+  .mid-about-first{
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+  .tinlinebaaaler{
+    width: 280px !important;
   }
 }
